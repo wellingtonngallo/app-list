@@ -8,15 +8,15 @@ export const ProductList = memo(({ products }) => {
   
 	return (
 		<div>
-			<input
-				type="text"
-				placeholder="Buscar produtos..."
-				value={search}
-				onChange={(e) => handleSearch(e.target.value)}
-			/>
-			<button onClick={handleSort}>
-				Ordenar por preço {sortAsc ? '↑' : '↓'}
-			</button>
+      <input
+        type="text"
+        placeholder="Buscar produtos..."
+        value={search}
+        onChange={(e) => handleSearch(e.target.value)}
+      />
+      <button onClick={handleSort}>
+        Ordenar por preço {sortAsc ? '↑' : '↓'}
+      </button>
       {filteredProducts.length === 0 ? 
         <p>Nenhum produto encontrado</p> 
       : (
