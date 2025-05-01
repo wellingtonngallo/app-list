@@ -7,7 +7,7 @@ export const ProductList = memo(({ products }) => {
   const { filteredProducts, handleSearch, handleSort, sortAsc, search  } = useProductListModel({ products });
   
 	return (
-		<div>
+    <>
       <input
         type="text"
         placeholder="Buscar produtos..."
@@ -26,7 +26,7 @@ export const ProductList = memo(({ products }) => {
           ))}
         </ul>
       )}
-		</div>
+    </>
 	);
 });
 
