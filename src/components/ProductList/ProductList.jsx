@@ -6,7 +6,7 @@ import { ItemList } from '../ItemList/ItemList';
 export const ProductList = memo(({ products }) => {
   const { filteredProducts, handleSearch, handleSort, sortAsc, search  } = useProductListModel({ products });
   
-	return (
+  return (
     <>
       <input
         type="text"
@@ -27,7 +27,7 @@ export const ProductList = memo(({ products }) => {
         </ul>
       )}
     </>
-	);
+  );
 });
 
  
